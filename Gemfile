@@ -7,6 +7,8 @@ gem 'rails', '4.1.1'
 gem 'haml-rails'
 gem 'uglifier'
 gem 'jquery-rails'
+gem 'bootstrap_form'
+gem 'bcrypt'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
