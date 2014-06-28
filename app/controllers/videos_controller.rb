@@ -13,6 +13,7 @@ class VideosController < ApplicationController
 
 
   def show
+
   end
 
   def new

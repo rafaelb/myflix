@@ -5,12 +5,18 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-categories = Category.create([{name: 'cat1'}, {name: 'cat2'}])
-Video.create(title: 'Movie 1', description: 'The first movie', category: categories.first)
-Video.create(title: 'Movie 2', description: 'The second movie', category: categories.last)
-Video.create(title: 'Movie 3', description: 'The first movie', category: categories.first)
-Video.create(title: 'Movie 4', description: 'The first movie', category: categories.first)
-Video.create(title: 'Movie 5', description: 'The first movie', category: categories.first)
-Video.create(title: 'Movie 6', description: 'The first movie', category: categories.first)
-Video.create(title: 'Movie 7', description: 'The first movie', category: categories.first)
-Video.create(title: 'Movie 8', description: 'The first movie', category: categories.first)
+cat1 = Fabricate(:category)
+cat2 = Fabricate(:category)
+cat3 = Fabricate(:category)
+cat4 = Fabricate(:category)
+cat5 = Fabricate(:category)
+5.times{ Fabricate(:video, category: cat1) }
+5.times{ Fabricate(:video, category: cat2) }
+5.times{ Fabricate(:video, category: cat3) }
+5.times{ Fabricate(:video, category: cat4) }
+5.times{ Fabricate(:video, category: cat5) }
+5.times{ Fabricate(:video, category: cat1) }
+5.times{ Fabricate(:video, category: cat2) }
+5.times{ Fabricate(:video, category: cat3) }
+5.times{ Fabricate(:video, category: cat4) }
+5.times{ Fabricate(:video, category: cat5) }

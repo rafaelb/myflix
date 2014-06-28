@@ -12,6 +12,8 @@ gem 'bcrypt'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
+  gem 'fabrication'
+  gem 'faker'
 end
 
 group :development do
