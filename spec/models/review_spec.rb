@@ -11,7 +11,7 @@ describe Review do
 
   describe "rating" do
     it "should not be valid with any number larger than  5" do
-      
+
     end
   end
 
