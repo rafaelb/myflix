@@ -12,13 +12,13 @@ Myflix::Application.routes.draw do
   get 'logout', to: 'sessions#destroy'
 
   resources :videos do
+    resources :reviews, only: [:create]
     collection do
       post :search, to: 'videos#search'
     end
   end
-  resources :videos
   resources :categories
-  resources :users, only: [:create]
+  resources :users, only: [:create, :show]
   resources :sessions, only: [:create]
 
 

@@ -2,4 +2,4 @@
 .video.col-sm-2
   = link_to "", nil do
     %img(src="/tmp/#{['futurama', 'south_park', 'family_guy'].sample}.jpg")
-    = video.title
+    = link_to(video.title, video_path(video))

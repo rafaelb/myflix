@@ -2,6 +2,8 @@ require 'rails_helper'
 
 describe VideosController do
   let(:video) { Fabricate(:video) }
+  let(:review1) { Fabricate(:review, video: video)}
+  let(:review2) { Fabricate(:review, video: video)}
   context 'not logged in' do
     describe 'GET #show' do
 
@@ -32,6 +34,10 @@ describe VideosController do
 
       it "renders the :show template" do
         expect(response).to render_template :show
+      end
+
+      it "assigns the video's reviews to video.reviews" do
+        expect(assigns(:video).reviews).to contain_exactly(review1, review2)
       end
     end
 

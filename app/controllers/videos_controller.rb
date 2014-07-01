@@ -13,7 +13,7 @@ class VideosController < ApplicationController
 
 
   def show
-
+    @review = Review.new
   end
 
   def new

@@ -6,7 +6,7 @@ describe Video  do
   it { should validate_presence_of(:category)}
   it { should validate_presence_of(:title)}
   it { should validate_presence_of(:description)}
-  it { should have_many (:reviews) }
+  it { should have_many(:reviews).order('created_at DESC') }
 
   describe "search_by title" do
 
@@ -44,6 +44,15 @@ describe Video  do
       vid2 = Video.create(title: 'vid1', description: 'fasdlkfjsdklafj asdfjk sda', category: cat1, created_at: 1.year.ago)
       expect(Video.search_by_title('')).to eq([])
     end
+  end
+
+  describe "rating" do
+    before :each do
+      @vid = Fabricate(:video)
+    end
+
+    it { expect(@vid.rating).to be_instance_of(Float)}
+
   end
 
 
