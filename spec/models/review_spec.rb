@@ -7,6 +7,6 @@ describe Review do
   it { should validate_presence_of (:user)}
   it { should validate_presence_of (:rating)}
   it { should validate_presence_of (:content)}
-  it
+  it { should validate_uniqueness_of(:user_id).scoped_to(:video_id) }
 
 end
