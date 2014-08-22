@@ -20,3 +20,5 @@ cat5 = Fabricate(:category)
 5.times{ Fabricate(:video, category: cat3) }
 5.times{ Fabricate(:video, category: cat4) }
 5.times{ Fabricate(:video, category: cat5) }
+admin = User.create(full_name: 'admin', email: 'admin@admin.com', password: 'admin')
+5.times{ Fabricate(:relationship, follower: admin) }

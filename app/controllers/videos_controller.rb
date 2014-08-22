@@ -32,6 +32,7 @@ class VideosController < ApplicationController
 
   end
 
+
   private
 
   def video_params
@@ -41,5 +42,6 @@ class VideosController < ApplicationController
   def set_video
     @video = Video.find(params[:id])
   end
+
 
 end

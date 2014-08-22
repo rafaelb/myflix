@@ -19,6 +19,14 @@ describe UsersController do
         expect(response).to redirect_to home_path
       end
     end
+
+    describe "GET #show" do
+      it "sets @user" do
+        user = Fabricate(:user)
+        get :show, id: user.id
+        expect(assigns(:user)).to eq user
+      end
+    end
   end
 
   context "guest" do
@@ -67,6 +75,16 @@ describe UsersController do
         it "should not create the user" do
           expect(User.count).to eq(0)
         end
+      end
+    end
+
+    describe "GET #show" do
+      it_behaves_like "requires sign in" do
+        let(:action) { get :show, id: 1 }
+      end
+      it "redirects to the login_path if guest" do
+        get :show, id: 1
+        expect(response).to redirect_to(login_path)
       end
     end
   end

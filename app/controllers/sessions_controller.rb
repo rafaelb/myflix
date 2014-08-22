@@ -26,7 +26,7 @@ class SessionsController < ApplicationController
 
   def login_user!(user)
     session[:user_id] = user.id
-    flash[:notice] = "You have succesfully logged in!"
+    flash[:notice] = "You have successfully logged in!"
     redirect_to home_path
   end
 

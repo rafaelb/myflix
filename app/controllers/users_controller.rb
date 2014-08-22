@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
   before_action 'require_guest', only: [:new, :create]
+  before_action 'require_user', only: :show
+  before_action 'set_user', only: [:show]
 
   def index
 
@@ -35,5 +37,9 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit(:full_name, :email, :password)
+  end
+
+  def set_user
+    @user = User.find(params[:id])
   end
 end

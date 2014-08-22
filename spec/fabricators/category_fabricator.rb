@@ -1,3 +1,3 @@
 Fabricator(:category) do
-  name { Faker::Lorem::word }
+  name { sequence(:name) { |i| "Category #{i}" }}
 end

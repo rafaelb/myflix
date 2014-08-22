@@ -1,5 +1,5 @@
 Fabricator(:queue_item) do
   user
   video
-  position { Faker::Number.digit }
+  position { [1,2,3].sample }
 end

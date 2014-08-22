@@ -1,5 +1,5 @@
 Fabricator(:user) do
   full_name { Faker::Name::name }
-  email { Faker::Internet::email }
+  email { sequence(:email) { |i| "user#{i}@example.com" } }
   password { Faker::Lorem::word }
 end

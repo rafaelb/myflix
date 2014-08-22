@@ -1,5 +1,5 @@
 Fabricator(:video) do
-  title { Faker::Lorem.word }
+  title { sequence(:name) { |i| "Video #{i}" }}
   description { Faker::Lorem::paragraph(2) }
   category
 end
