@@ -7,7 +7,7 @@ class ForgotPasswordsController < ApplicationController
   def create
     user = User.where(email: params[:email]).first
     if user
-      UserMailer.send_forgot_password(user).deliver
+      UserMailer.delay.send_forgot_password(user)
       redirect_to forgot_password_confirmation_path
     else
       flash[:error] = params[:email].blank? ? "Can't be blank!!!" : "Invalid email!!!"
