@@ -45,6 +45,10 @@ describe InvitesController do
       it "sets the flash success" do
         expect(flash[:success]).to be_present
       end
+
+      it "sets a token" do
+        expect(Invite.last.token).to_not be_nil
+      end
     end
 
     context "with invalid attributes" do

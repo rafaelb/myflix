@@ -10,6 +10,6 @@ class Invite < ActiveRecord::Base
   private
 
   def send_email
-    UserMailer.send_invite(inviter,recipient_name,recipient_email,message,token).deliver
+    UserMailer.delay.send_invite(inviter,recipient_name,recipient_email,message,token)
   end
 end

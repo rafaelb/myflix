@@ -5,6 +5,8 @@ require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'capybara/rails'
 require 'capybara/email/rspec'
+require 'sidekiq/testing'
+Sidekiq::Testing.inline!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
@@ -42,6 +44,9 @@ RSpec.configure do |config|
   # The different available types are documented in the features, such as in
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
-  config.before(:each) { ActionMailer::Base.deliveries.clear }
+  config.before(:each) do
+    ActionMailer::Base.deliveries.clear
+    Sidekiq::Worker.clear_all
+  end
 
 end

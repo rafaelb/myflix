@@ -60,7 +60,7 @@ describe UsersController do
       context "User already exists" do
         before :each do
           @user = Fabricate(:user)
-          @invite = Invite.create(inviter: @referer, recipient_name: @user.full_name, recipient_email: @user.email)
+          @invite = Invite.create(inviter: @referer, recipient_name: @user.full_name, recipient_email: @user.email, message: 'dasjkldhask')
           get :new_with_invitation_token, token: @invite.token
         end
         it "should redirect to login path" do
@@ -73,7 +73,7 @@ describe UsersController do
 
       context "User doesn't exist" do
         before :each do
-          @invite = Invite.create(inviter: @referer, recipient_name: "New User", recipient_email: "new@user.com")
+          @invite = Invite.create(inviter: @referer, recipient_name: "New User", recipient_email: "new@user.com", message: "llafhsdkajfhasdjklfhasdjklfhasdjklfhasdjklfhasdjklhlkasfdfhasdkljh")
           get :new_with_invitation_token, token: @invite.token
         end
 
@@ -129,7 +129,7 @@ describe UsersController do
       context "valid referer" do
         before :each do
           @referer = Fabricate(:user)
-          @invite = Invite.create(inviter: @referer, recipient_name: "New User", recipient_email: "new@user.com")
+          @invite = Invite.create(inviter: @referer, recipient_name: "New User", recipient_email: "new@user.com", message: 'ffdsjkfhsdjkfh')
           post :create, user: Fabricate.attributes_for(:user, email: "new@user.com")
         end
 
