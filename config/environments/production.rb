@@ -13,7 +13,7 @@ Myflix::Application.configure do
       :authentication => :plain,
   }
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options =  {host: "http://evening-wildwood-4416.herokuapp.com/"}
+  config.action_mailer.default_url_options =  {host: "evening-wildwood-4416.herokuapp.com"}
 
   config.serve_static_assets = false
 
