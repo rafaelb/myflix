@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'bootstrap_form'
 gem 'bcrypt'
 gem 'sidekiq'
+gem 'unicorn'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
@@ -38,6 +39,6 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
-  gem 'unicorn'
+
 end
 
