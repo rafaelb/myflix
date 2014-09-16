@@ -12,7 +12,7 @@ namespace :deploy do
   task :production do
     deployment = Paratrooper::Deploy.new("evening-wildwood-4416") do |deploy|
       deploy.tag              = 'production',
-          deploy.match_tag        = 'staging',
+      deploy.match_tag        = 'staging'
     end
 
     deployment.deploy

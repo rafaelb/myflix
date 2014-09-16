@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce1e7d10-c975-4051-a98b-24f896416d52" name="Default" comment="fixed deploy.rake">
+    <list default="true" id="ce1e7d10-c975-4051-a98b-24f896416d52" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/deploy.rake" afterPath="$PROJECT_DIR$/lib/tasks/deploy.rake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -262,7 +262,7 @@
             <entry file="file://$PROJECT_DIR$/lib/tasks/deploy.rake">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.5630027" vertical-offset="0" max-vertical-offset="375">
-                  <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+                  <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
                   <folding />
                 </state>
               </provider>
@@ -1716,7 +1716,11 @@
       <created>1410899337596</created>
       <updated>1410899337596</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="fixed deploy.rake">
+      <created>1410899713130</created>
+      <updated>1410899713130</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1808,7 +1812,8 @@
     <MESSAGE value="updated forgot passwords controller" />
     <MESSAGE value="intalled sentry raven" />
     <MESSAGE value="Installed and configured paratrooper gem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Installed and configured paratrooper gem" />
+    <MESSAGE value="fixed deploy.rake" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed deploy.rake" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2204,7 +2209,7 @@
     <entry file="file://$PROJECT_DIR$/lib/tasks/deploy.rake">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5630027" vertical-offset="0" max-vertical-offset="375">
-          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
           <folding />
         </state>
       </provider>
