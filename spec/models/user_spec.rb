@@ -11,6 +11,12 @@ describe User do
   it { should have_many(:followed_users).through(:relationships).source(:followed) }
   it { should have_many(:reverse_relationships).with_foreign_key('followed_id').class_name('Relationship') }
   it { should have_many(:followers).through(:reverse_relationships).source(:follower) }
+  it { should have_many(:invites).with_foreign_key('inviter_id')}
+
+  it "generates a random token when the user is created" do
+    user = Fabricate(:user)
+    expect(user.token).to be_present
+  end
 
   describe "#queued_video?" do
     it "returns true when the user queued the video" do

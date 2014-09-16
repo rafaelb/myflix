@@ -1,0 +1,6 @@
+%html
+  %body
+    %p Hi #{@rcv_name}
+    %p #{@sender.full_name} has sent you a message:
+    %p #{@message}
+    =link_to "Click here to join MyFlix", register_with_token_url(@token)
