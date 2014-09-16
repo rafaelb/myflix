@@ -9,7 +9,6 @@ gem 'uglifier'
 gem 'jquery-rails'
 gem 'bootstrap_form'
 gem 'bcrypt'
-gem 'runtimeerror_notifier'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
