@@ -12,7 +12,7 @@ gem 'bcrypt'
 gem 'sidekiq'
 gem 'unicorn'
 gem "sentry-raven"
-
+gem 'paratrooper'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'

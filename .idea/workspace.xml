@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce1e7d10-c975-4051-a98b-24f896416d52" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/raven.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tasks/deploy.rake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/myflix.iml" afterPath="$PROJECT_DIR$/.idea/myflix.iml" />
@@ -187,11 +187,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Gemfile">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.47560975" vertical-offset="0" max-vertical-offset="780">
-                  <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+                <state vertical-scroll-proportion="0.5121951" vertical-offset="0" max-vertical-offset="780">
+                  <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
@@ -231,10 +231,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.28150135" vertical-offset="225" max-vertical-offset="1020">
+                <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1020">
                   <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
                   <folding />
                 </state>
@@ -256,6 +256,16 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
                   <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="deploy.rake" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/lib/tasks/deploy.rake">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.20107238" vertical-offset="0" max-vertical-offset="390">
+                  <caret line="5" column="72" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
                   <folding />
                 </state>
               </provider>
@@ -286,16 +296,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
                   <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="user_mailer.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/mailers/user_mailer.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="420">
-                  <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -354,7 +354,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/spec/fabricators/relationship_fabricator.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/models/relationship.rb" />
         <option value="$PROJECT_DIR$/app/views/relationships/index.html.haml" />
@@ -405,6 +404,7 @@
         <option value="$PROJECT_DIR$/app/controllers/forgot_passwords_controller.rb" />
         <option value="$PROJECT_DIR$/config/initializers/raven.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/lib/tasks/deploy.rake" />
       </list>
     </option>
   </component>
@@ -1711,12 +1711,16 @@
       <created>1410896100249</created>
       <updated>1410896100249</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="intalled sentry raven">
+      <created>1410897863747</created>
+      <updated>1410897863747</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1801,7 +1805,8 @@
     <MESSAGE value="Created Procfile&#10;Set up Unicorn" />
     <MESSAGE value="updated Gemfile" />
     <MESSAGE value="updated forgot passwords controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated forgot passwords controller" />
+    <MESSAGE value="intalled sentry raven" />
+    <option name="LAST_COMMIT_MESSAGE" value="intalled sentry raven" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1811,13 +1816,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/password_resets/expired.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="150">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.2@myflix/gems/actionview-4.1.4/lib/action_view/helpers/form_tag_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.0947752" vertical-offset="901" max-vertical-offset="11370">
@@ -2057,14 +2055,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/rails_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="452" max-vertical-offset="870">
@@ -2145,14 +2135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28150135" vertical-offset="225" max-vertical-offset="1020">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/users_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1916" max-vertical-offset="2790">
@@ -2195,8 +2177,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47560975" vertical-offset="0" max-vertical-offset="780">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.5121951" vertical-offset="0" max-vertical-offset="780">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1020">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tasks/deploy.rake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20107238" vertical-offset="0" max-vertical-offset="390">
+          <caret line="5" column="72" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
           <folding />
         </state>
       </provider>
