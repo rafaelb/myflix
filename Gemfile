@@ -11,6 +11,8 @@ gem 'bootstrap_form'
 gem 'bcrypt'
 gem 'sidekiq'
 gem 'unicorn'
+gem "sentry-raven"
+
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
