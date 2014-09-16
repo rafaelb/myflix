@@ -4,6 +4,7 @@ class Invite < ActiveRecord::Base
   validates_presence_of :inviter
   validates_presence_of :recipient_name
   validates_presence_of :recipient_email
+  validates_presence_of :message
   after_create :send_email
 
   private
