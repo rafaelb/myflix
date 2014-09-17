@@ -1,4 +1,6 @@
 class Video < ActiveRecord::Base
+  mount_uploader :large_cover, LargeCoverUploader
+  mount_uploader :small_cover, SmallCoverUploader
   belongs_to :category
   validates :category, presence: true
   validates :title, presence: true

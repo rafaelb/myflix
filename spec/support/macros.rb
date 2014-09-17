@@ -1,6 +1,16 @@
-def set_current_user
-  user = Fabricate(:user)
-  session[:user_id] = user.id
+def set_current_user(user=nil)
+  session[:user_id] = (user || Fabricate(:user)).id
+end
+
+def set_admin_user(admin=nil)
+  user = Fabricate(:user, admin: true)
+  session[:user_id] = (admin || Fabricate(:admin)).id
+end
+
+def clear_admin
+  user = User.find(session[:user_id])
+  user.admin = false
+  user.save
 end
 
 def clear_current_user
@@ -18,3 +28,4 @@ def sign_in_user(a_user=nil)
   fill_in 'Password', with: user.password
   click_button 'Sign In'
 end
+
