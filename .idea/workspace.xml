@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce1e7d10-c975-4051-a98b-24f896416d52" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/carrierwave.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/carrierwave.rb" afterPath="$PROJECT_DIR$/config/initializers/carrierwave.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/myflix.iml" afterPath="$PROJECT_DIR$/.idea/myflix.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/videos/new.html.haml" afterPath="$PROJECT_DIR$/app/views/admin/videos/new.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin/videos_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin/videos_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="myflix.iws" />
@@ -57,7 +52,7 @@
     <SUITE FILE_PATH="coverage/myflix@RelationshipsController_DELETE_destroy_delete_a_relationship__myflix.coverage" NAME="RelationshipsController DELETE#destroy delete a relationship: myflix Coverage Results" MODIFIED="1408820317542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="myflix" />
     <SUITE FILE_PATH="coverage/myflix@Run_spec__review_spec___myflix.coverage" NAME="Run spec 'review_spec': myflix Coverage Results" MODIFIED="1404295848424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="myflix" />
     <SUITE FILE_PATH="coverage/myflix@QueueItemsController_logged_in_DELETE_destroy_deletes_the_queue_item__myflix.coverage" NAME="QueueItemsController logged in DELETE destroy deletes the queue item: myflix Coverage Results" MODIFIED="1404739495282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="myflix" />
-    <SUITE FILE_PATH="coverage/myflix@Run_spec__videos_controller_spec___myflix.coverage" NAME="Run spec 'videos_controller_spec': myflix Coverage Results" MODIFIED="1410961089613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="myflix" />
+    <SUITE FILE_PATH="coverage/myflix@Run_spec__videos_controller_spec___myflix.coverage" NAME="Run spec 'videos_controller_spec': myflix Coverage Results" MODIFIED="1411130176084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="myflix" />
     <SUITE FILE_PATH="coverage/myflix@Run_spec__relationships_controller_spec___myflix.coverage" NAME="Run spec 'relationships_controller_spec': myflix Coverage Results" MODIFIED="1408863860818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="myflix" />
     <SUITE FILE_PATH="coverage/myflix@RelationshipsController_POST_create__myflix.coverage" NAME="RelationshipsController POST#create: myflix Coverage Results" MODIFIED="1408709959378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="myflix" />
     <SUITE FILE_PATH="coverage/myflix@QueueItem_rating__can_clear_the_rating_of_the_review_if_present__myflix.coverage" NAME="QueueItem#rating= can clear the rating of the review if present: myflix Coverage Results" MODIFIED="1406096600103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="myflix" />
@@ -79,9 +74,9 @@
     <SUITE FILE_PATH="coverage/myflix@QueueItemsController_logged_in_DELETE_destroy_redirects_to_my_queue_page__myflix.coverage" NAME="QueueItemsController logged in DELETE destroy redirects to my queue page: myflix Coverage Results" MODIFIED="1404737542541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="myflix" />
     <SUITE FILE_PATH="coverage/myflix@Run_spec__relationship_spec___myflix.coverage" NAME="Run spec 'relationship_spec': myflix Coverage Results" MODIFIED="1408630531306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="myflix" />
     <SUITE FILE_PATH="coverage/myflix@ForgotPasswordsController_GET_post_with_existing_email_sends_an_email_to_the_email_address__myflix.coverage" NAME="ForgotPasswordsController GET#post with existing email sends an email to the email address: myflix Coverage Results" MODIFIED="1409573275890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="myflix" />
+    <SUITE FILE_PATH="coverage/myflix@All_specs_in_spec__myflix.coverage" NAME="All specs in spec: myflix Coverage Results" MODIFIED="1411130190767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="myflix" />
     <SUITE FILE_PATH="coverage/myflix@QueueItemsController_logged_in_DELETE_destroy_POST_update_queue_with_valid_inputs_reorders_the_queue_items__myflix.coverage" NAME="QueueItemsController logged in DELETE destroy POST update_queue with valid inputs reorders the queue items: myflix Coverage Results" MODIFIED="1405954432130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="myflix" />
     <SUITE FILE_PATH="coverage/myflix@db_test_clone__myflix.coverage" NAME="db:test:clone: myflix Coverage Results" MODIFIED="1402833052885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="myflix" />
-    <SUITE FILE_PATH="coverage/myflix@All_specs_in_spec__myflix.coverage" NAME="All specs in spec: myflix Coverage Results" MODIFIED="1405968059289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="myflix" />
     <SUITE FILE_PATH="coverage/myflix@QueueItemsController_logged_in_DELETE_destroy_POST_update_queue_with_valid_inputs_updates_the_rating_of_the_review_associated_with_the_queue_item__myflix.coverage" NAME="QueueItemsController logged in DELETE destroy POST update_queue with valid inputs updates the rating of the review associated with the queue item: myflix Coverage Results" MODIFIED="1405974208384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="myflix" />
     <SUITE FILE_PATH="coverage/myflix@UsersController_guest_POST__create_valid_referer_expires_the_invite__myflix.coverage" NAME="UsersController guest POST #create valid referer expires the invite: myflix Coverage Results" MODIFIED="1410872158204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="myflix" />
     <SUITE FILE_PATH="coverage/myflix@QueueItem_rating__changes_the_rating_of_the_review_if_review_present__myflix.coverage" NAME="QueueItem#rating= changes the rating of the review if review present: myflix Coverage Results" MODIFIED="1406096230941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="myflix" />
@@ -151,21 +146,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="carrierwave.rb" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="carrierwave.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/config/initializers/carrierwave.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-                  <caret line="5" column="98" selection-start-line="5" selection-start-column="98" selection-end-line="5" selection-end-column="98" />
+                <state vertical-scroll-proportion="0.3" vertical-offset="0" max-vertical-offset="350">
+                  <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="44" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="videos_controller.rb" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="videos_controller.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/admin/videos_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3468208" vertical-offset="0" max-vertical-offset="519">
-                  <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+                  <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
@@ -204,7 +199,7 @@
           <file leaf-file-name="video.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/models/video.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="390">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
                   <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
                   <folding />
                 </state>
@@ -248,8 +243,8 @@
           <file leaf-file-name="videos_controller_spec.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/spec/controllers/admin/videos_controller_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6906077" vertical-offset="0" max-vertical-offset="543">
-                  <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -383,12 +378,12 @@
         <option value="$PROJECT_DIR$/spec/fabricators/user_fabricator.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140917161819_rename_cover_in_videos.rb" />
         <option value="$PROJECT_DIR$/app/models/video.rb" />
-        <option value="$PROJECT_DIR$/config/initializers/carrierwave.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/admin/videos/new.html.haml" />
         <option value="$PROJECT_DIR$/app/uploaders/large_cover_uploader.rb" />
         <option value="$PROJECT_DIR$/app/uploaders/small_cover_uploader.rb" />
         <option value="$PROJECT_DIR$/app/controllers/admin/videos_controller.rb" />
+        <option value="$PROJECT_DIR$/config/initializers/carrierwave.rb" />
       </list>
     </option>
   </component>
@@ -1169,29 +1164,7 @@
       <recent name="$PROJECT_DIR$/app/views/videos" />
     </key>
   </component>
-  <component name="RunManager" selected="Rake.db:migrate: myflix">
-    <configuration default="false" name="users_controller" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
-      <module name="myflix" />
-      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/app/controllers" />
-      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/app/controllers/users_controller.rb" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="RSpec.All specs in spec: myflix">
     <configuration default="false" name="db:migrate: myflix" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
       <module name="myflix" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -1320,6 +1293,43 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Admin::VideosController GET #new" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="All specs in spec: myflix" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="myflix" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$MODULE_DIR$/spec" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
@@ -1470,19 +1480,19 @@
       <item index="2" class="java.lang.String" itemvalue="Rails.Production: myflix" />
       <item index="3" class="java.lang.String" itemvalue="Rails.Development: myflix" />
       <item index="4" class="java.lang.String" itemvalue="RSpec.Run spec 'invites_controller_spec': myflix" />
-      <item index="5" class="java.lang.String" itemvalue="Ruby.users_controller" />
-      <item index="6" class="java.lang.String" itemvalue="Rake.db:migrate: myflix" />
-      <item index="7" class="java.lang.String" itemvalue="RSpec.UsersController guest POST #create valid referer expires the invite: myflix" />
-      <item index="8" class="java.lang.String" itemvalue="RSpec.Run spec 'videos_controller_spec': myflix" />
-      <item index="9" class="java.lang.String" itemvalue="RSpec.Admin::VideosController GET #new: myflix" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.db:migrate: myflix" />
+      <item index="6" class="java.lang.String" itemvalue="RSpec.UsersController guest POST #create valid referer expires the invite: myflix" />
+      <item index="7" class="java.lang.String" itemvalue="RSpec.Run spec 'videos_controller_spec': myflix" />
+      <item index="8" class="java.lang.String" itemvalue="RSpec.Admin::VideosController GET #new: myflix" />
+      <item index="9" class="java.lang.String" itemvalue="RSpec.All specs in spec: myflix" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.Admin::VideosController GET #new: myflix" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.All specs in spec: myflix" />
         <item index="1" class="java.lang.String" itemvalue="RSpec.Run spec 'videos_controller_spec': myflix" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.UsersController guest POST #create valid referer expires the invite: myflix" />
-        <item index="3" class="java.lang.String" itemvalue="Rake.db:migrate: myflix" />
-        <item index="4" class="java.lang.String" itemvalue="Ruby.users_controller" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.Admin::VideosController GET #new: myflix" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.UsersController guest POST #create valid referer expires the invite: myflix" />
+        <item index="4" class="java.lang.String" itemvalue="Rake.db:migrate: myflix" />
       </list>
     </recent_temporary>
   </component>
@@ -1620,14 +1630,18 @@
       <created>1410975191832</created>
       <updated>1410975191832</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="put setting for S3 bucket&#10;set up minimagick">
+      <created>1411129660388</created>
+      <updated>1411129660388</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1637,7 +1651,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39854318" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4516129" sideWeight="0.10945274" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49219564" sideWeight="0.8905473" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49219564" sideWeight="0.8905473" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1689,7 +1703,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="recent videos, categories, search" />
     <MESSAGE value="updated seed" />
     <MESSAGE value="added authentications" />
     <MESSAGE value="fixed session controller" />
@@ -1714,7 +1727,8 @@
     <MESSAGE value="Installed and configured paratrooper gem" />
     <MESSAGE value="fixed deploy.rake" />
     <MESSAGE value="created admin controller, admin video controller&#10;changed video schema&#10;installed carrierwave and fog" />
-    <option name="LAST_COMMIT_MESSAGE" value="created admin controller, admin video controller&#10;changed video schema&#10;installed carrierwave and fog" />
+    <MESSAGE value="put setting for S3 bucket&#10;set up minimagick" />
+    <option name="LAST_COMMIT_MESSAGE" value="put setting for S3 bucket&#10;set up minimagick" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1947,14 +1961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/video.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/invites/new.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
@@ -2043,14 +2049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/carrierwave.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <caret line="5" column="98" selection-start-line="5" selection-start-column="98" selection-end-line="5" selection-end-column="98" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/rails">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
@@ -2091,14 +2089,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/controllers/admin/videos_controller_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6906077" vertical-offset="0" max-vertical-offset="543">
-          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
@@ -2109,8 +2099,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/admin/videos_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3468208" vertical-offset="0" max-vertical-offset="519">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/controllers/admin/videos_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/video.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/carrierwave.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3" vertical-offset="0" max-vertical-offset="350">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="44" />
           <folding />
         </state>
       </provider>
