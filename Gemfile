@@ -15,6 +15,7 @@ gem "sentry-raven"
 gem 'paratrooper'
 gem 'carrierwave'
 gem 'fog'
+gem "mini_magick"
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
