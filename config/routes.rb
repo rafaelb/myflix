@@ -35,6 +35,6 @@ Myflix::Application.routes.draw do
   resources :invites, only: [:create]
 
   namespace :admin do
-    resources :videos
+    resources :videos, only: [:new, :create]
   end
 end

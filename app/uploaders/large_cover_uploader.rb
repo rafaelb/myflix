@@ -1,12 +1,13 @@
 # encoding: utf-8
 
 class LargeCoverUploader < CarrierWave::Uploader::Base
+  include CarrierWave::MiniMagick
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   # include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
-  storage :fog
+  #storage :fog
   # storage :fog
 
   # Override the directory where uploaded files will be stored.
@@ -22,7 +23,7 @@ class LargeCoverUploader < CarrierWave::Uploader::Base
   #
   #   "/images/fallback/" + [version_name, "default.png"].compact.join('_')
   # end
-
+  process :resize_to_fill => [665,375]
   # Process files as they are uploaded:
   # process :scale => [200, 300]
   #

@@ -1,3 +1,4 @@
 
 .video.col-sm-2
-  = link_to(image_tag(src="/tmp/#{['futurama', 'south_park', 'family_guy'].sample}.jpg"), video_path(video), id: "#video-#{video.id}")
+  = link_to video_path(video), nil do
+    %img(src="#{video.small_cover}")

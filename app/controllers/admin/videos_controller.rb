@@ -7,7 +7,7 @@ class Admin::VideosController < AdminsController
     @video = Video.new(video_params)
     if @video.save
       flash[:success] = 'Video Saved'
-      redirect_to video_path(@video)
+      redirect_to new_admin_video_path
     else
       flash[:error] = "Invalid attributes"
       render :new
@@ -16,6 +16,6 @@ class Admin::VideosController < AdminsController
 
   private
   def video_params
-    params.require(:video).permit(:title, :category_id, :description, :large_cover, :small_cover)
+    params.require(:video).permit(:title, :category_id, :description, :large_cover, :small_cover, :video_url)
   end
 end

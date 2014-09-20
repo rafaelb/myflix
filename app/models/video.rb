@@ -4,7 +4,7 @@ class Video < ActiveRecord::Base
   belongs_to :category
   validates :category, presence: true
   validates :title, presence: true
-  validates :description, presence: true
+  validates :description, :video_url, presence: true
   has_many :reviews, -> { order(created_at: :desc) }
 
   def self.search_by_title(search_term)

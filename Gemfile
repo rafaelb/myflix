@@ -16,6 +16,7 @@ gem 'paratrooper'
 gem 'carrierwave'
 gem 'fog'
 gem "mini_magick"
+gem 'stripe'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'

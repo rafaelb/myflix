@@ -18,14 +18,20 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    if @user.save
+    if @user.valid?
+      process_payment
+      @user.save
       flash[:notice] = "User Registered!"
       UserMailer.delay.welcome_email(@user)
       redirect_to root_path
+
     else
       render :new
     end
   end
+
+
+
 
   def edit
 
@@ -59,5 +65,25 @@ class UsersController < ApplicationController
 
   def set_user
     @user = User.find(params[:id])
+  end
+
+  def process_payment
+    @amount = 999
+
+    customer = Stripe::Customer.create(
+        :email => @user.email,
+        :card  => params[:stripeToken]
+    )
+
+    charge = Stripe::Charge.create(
+        :customer    => customer.id,
+        :amount      => @amount,
+        :description => 'Rails Stripe customer',
+        :currency    => 'usd'
+    )
+  rescue Stripe::CardError => e
+
+    flash[:error] = e.message
+    redirect_to register_path
   end
 end
