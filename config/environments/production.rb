@@ -15,7 +15,7 @@ Myflix::Application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options =  {host: "evening-wildwood-4416.herokuapp.com"}
 
-  config.serve_static_assets = false
+  config.serve_static_assets = true
 
   config.assets.compress = true
   config.assets.js_compressor = :uglifier
