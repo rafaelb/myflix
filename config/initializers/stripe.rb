@@ -8,7 +8,7 @@ Stripe.api_key = Rails.configuration.stripe[:secret_key]
 StripeEvent.configure do |events|
   events.subscribe 'charge.succeeded' do |event|
     user = User.find_by_token(event.data.object.customer)
-    Payment.create(user: user, amount: event.object.amount, reference_id: event.id)
+    Payment.create(user: user, amount: event.amount, reference_id: event.id)
   end
   events.subscribe 'charge.failed' do |event|
     # Define subscriber behavior based on the event object
