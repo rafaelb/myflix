@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2385446938">
+  <component name="DataSourceManagerImpl" format="xml" hash="1256263404">
     <data-source source="LOCAL" name="Rails myflix: development" uuid="97bf6f95-e877-4f9f-8393-fb84ee544143">
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
@@ -11,6 +11,12 @@
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/test.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails myflix: production" uuid="8e19a2ed-22bc-44ea-b8c9-5581c427085b">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:myflix</jdbc-url>
       <libraries />
     </data-source>
   </component>
