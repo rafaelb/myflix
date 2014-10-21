@@ -1,5 +1,5 @@
 = content_for :head do
-  %script(src="https://js.stripe.com/v1/")
+  %script(src="https://js.stripe.com/v2/")
   :javascript
     Stripe.setPublishableKey('pk_test_CTLxVJuEpnaPVFB0WnioCMMe');
   = javascript_include_tag 'payments'
@@ -9,23 +9,24 @@
       = bootstrap_form_for(@user, layout: :horizontal, html: {id: 'register-form'}) do |f|
         %header
           %h1 Register
+          %span.payment-errors
         = f.email_field :email, control_col: "col-sm-6", label: 'Email Address'
         = f.password_field :password, control_col: "col-sm-6"
         = f.text_field :full_name, control_col: "col-sm-6"
         %fieldset.credit_card
           .form-group
-            %label.control-label.col-sm-2 Credit Card Number
+            %label.control-label.col-sm-2(for="credit-card-number") Credit Card Number
             .col-sm-6
-              %input.form-control(type="text")
+              %input.form-control#credit-card-number(type="text" data-stripe="number")
           .form-group
-            %label.control-label.col-sm-2 Security Code
+            %label.control-label.col-sm-2(for="security-code") Security Code
             .col-sm-6
-              %input.form-control(type="text")
+              %input.form-control#security-code(type="text" data-stripe="cvc")
           .form-group
             %label.control-label.col-sm-2 Expiration
             .col-sm-3
-              = select_month(Date.today, {add_month_numbers: true},  class: 'form-control')
+              = select_month(Date.today, {add_month_numbers: true},  class: 'form-control', data: {stripe: "exp-month"})
             .col-sm-2
-              = select_year(Date.today.year, {start_year: Date.today.year, end_year: Date.today.year + 4}, class: 'form-control')
+              = select_year(Date.today.year, {start_year: Date.today.year, end_year: Date.today.year + 4}, class: 'form-control', data: {stripe: "exp-year"})
         = f.form_group do
           = f.submit 'Sign Up', class: 'register_submit'

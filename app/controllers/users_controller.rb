@@ -17,17 +17,16 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
-    if @user.valid?
-      process_payment
-      @user.save
+    signup = SignUp.new(params).register
+    if signup.success?
       flash[:notice] = "User Registered!"
-      UserMailer.delay.welcome_email(@user)
       redirect_to root_path
-
     else
+      @user = signup.user
+      flash[:error] = signup.error
       render :new
     end
+
   end
 
 
@@ -67,23 +66,25 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
-  def process_payment
-    @amount = 999
-
-    customer = Stripe::Customer.create(
-        :email => @user.email,
-        :card  => params[:stripeToken]
-    )
-
-    charge = Stripe::Charge.create(
-        :customer    => customer.id,
-        :amount      => @amount,
-        :description => 'Rails Stripe customer',
-        :currency    => 'usd'
-    )
-  rescue Stripe::CardError => e
-
-    flash[:error] = e.message
-    redirect_to register_path
+  def sparecode
+    @user = User.new(user_params)
+    if @user.valid?
+      charge = StripeWrapper::Charge.create(
+          :card    => params[:stripeToken],
+          :amount      => 999,
+      )
+      if charge.succesful?
+        @user.save
+        flash[:notice] = "User Registered!"
+        UserMailer.delay.welcome_email(@user)
+        redirect_to root_path
+      else
+        flash[:error] = charge.error_message
+        render :new
+      end
+    else
+      flash[:error] = "Invalid user details"
+      render :new
+    end
   end
 end

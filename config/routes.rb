@@ -2,6 +2,8 @@ Myflix::Application.routes.draw do
 
   root to: 'pages#index'
 
+  mount StripeEvent::Engine => '/stripe_event'
+
   get 'home', to: 'videos#index'
 
   get 'ui(/:action)', controller: 'ui'
@@ -36,5 +38,6 @@ Myflix::Application.routes.draw do
 
   namespace :admin do
     resources :videos, only: [:new, :create]
+    resources :payments, only: :index
   end
 end

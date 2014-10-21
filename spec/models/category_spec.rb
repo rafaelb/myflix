@@ -8,7 +8,7 @@ describe Category do
   describe "#recent_videos" do
     it "return an empty array if there is no videos" do
       cat1 = Category.create(name: 'cat1')
-      cat1.recent_videos
+      expect(cat1.recent_videos).to eq []
     end
     it "returns the videos in reverse chronological order by created_at" do
       cat1 = Category.create(name: 'cat1')

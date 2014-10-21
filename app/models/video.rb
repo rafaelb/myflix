@@ -13,7 +13,7 @@ class Video < ActiveRecord::Base
   end
 
   def rating
-    return 0.0 if self.reviews.empty?
+    return nil if self.reviews.empty?
     total = 0
     self.reviews.each { |r| total += r.rating}
     (total.to_f / self.reviews.count).round(1)

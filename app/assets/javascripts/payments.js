@@ -5,17 +5,12 @@ jQuery(function($) {
     $('#register-form').submit(function(event) {
         var  $form = $(this);
         $form.find('.register_submit').prop('disabled',true);
-        Stripe.card.createToken({
-            number: $('.card-number').val(),
-            cvc: $('.card-cvc').val(),
-            exp_month: $('.card-expiry-month').val(),
-            exp_year: $('.card-expiry-year').val()
-        }, stripeResponseHandler);
+        Stripe.card.createToken($form, stripeResponseHandler);
         return false;
         });
 
     function stripeResponseHandler(status, response) {
-        var $form = $('#payment-form');
+        var $form = $('#register-form');
 
         if (response.error) {
             // Show the errors on the form

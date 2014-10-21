@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   after_create :set_followers_and_delete_invites
   validates :email, presence: true, uniqueness: true
   validates :full_name, presence: true
+  #validates :stripe_token, presence: true
   has_many :reviews, -> { order(created_at: :desc) }
   has_many :queue_items, -> { order(:position) }
   has_many :relationships, foreign_key: 'follower_id'
@@ -11,6 +12,7 @@ class User < ActiveRecord::Base
   has_many :reverse_relationships, foreign_key: 'followed_id', class_name: 'Relationship'
   has_many :followers, through: :reverse_relationships, source: :follower
   has_many :invites, foreign_key: 'inviter_id'
+  has_many :payments
 
 
   def normalize_queue_item_positions
